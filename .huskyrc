@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "echo 'aa' && lint-staged",
+    "pre-commit": "echo '开始执行eslint检测' && lint-staged",
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
 }
