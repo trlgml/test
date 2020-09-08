@@ -1,0 +1,19 @@
+diff --git a/node_modules/uuid/v1.js b/node_modules/uuid/v1.js
+index 8c245de..169aabb 100644
+--- a/node_modules/uuid/v1.js
++++ b/node_modules/uuid/v1.js
+@@ -1,4 +1,5 @@
+ var rng = require('./lib/rng');
++console.log(3222);
+ var bytesToUuid = require('./lib/bytesToUuid');
+ 
+ // **`v1()` - Generate time-based UUID**
+@@ -51,7 +52,7 @@ function v1(options, buf, offset) {
+   var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
+ 
+   // Time since last uuid creation (in msecs)
+-  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
++  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs) / 10000;
+ 
+   // Per 4.2.1.2, Bump clockseq on clock regression
+   if (dt < 0 && options.clockseq === undefined) {
