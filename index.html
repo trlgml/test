@@ -5,21 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" data-main="js/main.js"></script>
-
 </head>
-<style>
-
-</style>
 
 <body>
-  <div class="trlgml">
-
-  </div>
-  <div class="flourish-embed flourish-survey" data-src="visualisation/3510690">
-  </div>
-  <script src="https://public.flourish.studio/resources/embed.js"></script>
-  33344
 </body>
+<script>
+  console.log(fetch);
+  fetch('https://cc.oceanengine.com/creative_app_server/api/inspiration/advert/detail', {
+    headers: {
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'x-csrftoken': 'acd1qnIt0EUoDFqMR91unH9jsnz3pYaF',
+      'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.18(0x17001227) NetType/WIFI Language/zh_CN',
+      'content-type': 'application/json;charset=utf-8',
+      origin: 'https://cc.oceanengine.com',
+      Host: 'cc.oceanengine.com',
+    },
+    Referer: 'https://cc.oceanengine.com/mobile/share/ad/v0d00f6a0000bua5hq28dqngknqlbvag?name=&src=',
+    body: JSON.stringify({ vid: 'v0d00f6a0000bua5hq28dqngknqlbvag' }),
+    method: 'POST',
+    mode: 'cors',
+  }).then(async (result) => {
+    const json = await result.json();
+    const url = json.data.video_info.video_url;
+    console.log(url.split('?')[0]);
+  }).catch((err) => {
+    console.log(err);
+  });
+
+</script>
 
 </html>
