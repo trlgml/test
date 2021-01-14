@@ -17,6 +17,7 @@
     "file-saver": "^2.0.5",
     "googleapis": "^65.0.0",
     "gql-query-builder": "^3.5.4",
+    "ioredis": "^4.19.4",
     "jsonwebtoken": "^8.5.1",
     "live-server": "^1.2.1",
     "moment": "^2.29.1",
@@ -25,6 +26,7 @@
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
     "ramda": "^0.27.1",
+    "redlock": "^4.2.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "socket.io-client": "^2.3.0"
