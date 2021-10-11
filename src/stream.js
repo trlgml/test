@@ -9,4 +9,4 @@ http.createServer((req, res) => {
   fs.createReadStream(`${__dirname}/index.html`)
     .pipe(zlib.createGzip())
     .pipe(res);
-}).listen(8000)
+}).listen(8000);

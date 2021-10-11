@@ -27,6 +27,7 @@
     "normalizr": "^3.6.0",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
+    "qs": "^6.10.1",
     "ramda": "^0.27.1",
     "redlock": "^4.2.0",
     "request": "^2.88.2",
@@ -36,10 +37,12 @@
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "cheerio": "^1.0.0-rc.10",
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.13"
+    "lint-staged": "^10.2.13",
+    "superagent": "^6.1.0"
   }
 }
