@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header,
+    main,
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header {
+      background-color: red;
+      min-height: 10vh;
+    }
+
+    main {
+      color: #607d8b;
+      flex: 1;
+      min-height: 0;
+
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    footer {
+      min-height: 20vh;
+      background-color: antiquewhite;
+      margin-top: auto;
+    }
+
+    nav {
+      background-color: aliceblue;
+      width: 220px;
+      order: -1;
+    }
+
+    article {
+      background-color: beige;
+      flex: 1;
+    }
+
+    aside {
+      background-color: blue;
+      width: 220px;
+    }
+
+    article,
+    nav,
+    aside {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <main>
+    <article>article</article> <!-- 主内容 -->
+    <nav>nav</nav>
+    <aside>aside</aside>
+  </main>
+  <footer>footer</footer>
+</body>
+
+</html>
